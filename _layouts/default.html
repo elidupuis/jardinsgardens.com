@@ -17,9 +17,8 @@
     $(document).ready(function(){
       //  set active nav state:
       var url = $(document).url();  //  get url info
-      var curl = '/';   //  set default file path
-      if (url.attr('file') != null) curl = url.attr('file');  //  if filepath string is not null, retrieve it
-      $('#nav a[href$=' + curl + ']').addClass('active'); //  make it so.
+      var curl = url.attr('path') || '/';
+      $('#nav a[href=' + curl + ']').addClass('active'); //  make it so.
 
       //  add span for drop shadow:
       $('#top-img').append('<span/>');
