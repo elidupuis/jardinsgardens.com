@@ -2,7 +2,7 @@ permalink: /log/:title/
 relative_permalinks: false
 markdown: rdiscount
 timezone: America/Vancouver
-exclude: [.gitignore, .editorconfig, README.md]
+exclude: [.gitignore, .editorconfig, README.md, CNAME]
 
 name: Jardins Gardens
 title: Jardins Gardens. A tiny green footprint gardening company.
