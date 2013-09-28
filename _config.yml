@@ -4,8 +4,8 @@ markdown: rdiscount
 timezone: America/Vancouver
 exclude: [.gitignore, .editorconfig, README.md, CNAME]
 
-name: Jardins Gardens
-title: Jardins Gardens. A tiny green footprint gardening company.
+name: jardins gardens
+title: jardins gardens. a tiny green footprint gardening company.
 tagline: home-grown goodness.
 url: http://jardinsgardens.ca
 description: "We build raised garden beds at your home and give you the means to start growing your own food. Based in Penticton and Lower Mainland, British Columbia, Canada."
