@@ -22,7 +22,7 @@ permalink: /what/
 		<div class="modal">
 			<p class="heading">4' x 4' Raised Bed</p>
 			<p>Regular price $475</p>
-			<p>Grow more salad veggies than you think possible with this simple, raised garden bed. Easy to maintain &ndash; only minutes per week to weed and water. Save hundreds of dollars and have fun growing and eating your own fresh food. <a href="contact.php">Contact us</a>.</p>
+			<p>Grow more salad veggies than you think possible with this simple, raised garden bed. Easy to maintain &ndash; only minutes per week to weed and water. Save hundreds of dollars and have fun growing and eating your own fresh food. <a href="/contact/">Contact us</a>.</p>
 		</div>
 	</li>
 	<li class="two">
@@ -32,7 +32,7 @@ permalink: /what/
 		<div class="modal">
 			<p class="heading">4' x 8' Raised Bed, or two 4' x 4' Raised Beds</p>
 			<p><del>Regular $800</del> <strong>Introductory price $750</strong></p>
-			<p>Obviously, you can grow twice as much food as in one 4' x 4' garden bed. But more food doesn't just have to mean more of the same; you can try more varieties, or extend the harvest of your favourites. Eat more &ndash; save more! <a href="contact.php">Contact us</a>.</p>
+			<p>Obviously, you can grow twice as much food as in one 4' x 4' garden bed. But more food doesn't just have to mean more of the same; you can try more varieties, or extend the harvest of your favourites. Eat more &ndash; save more! <a href="/contact/">Contact us</a>.</p>
 		</div>
 	</li>
 	<li class="three">
@@ -41,7 +41,7 @@ permalink: /what/
 		A custom designed garden capable of feeding your entire family or neighbourhood if you are so inclined.</p>
 		<div class="modal">
 			<p class="heading">Custom Raised Beds</p>
-			<p>We love a challenge &ndash; <a href="contact.php">contact us</a>.</p>
+			<p>We love a challenge &ndash; <a href="/contact/">contact us</a>.</p>
 		</div>
 	</li>
 </ul>
