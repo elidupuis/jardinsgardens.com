@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="copyright" content="{{ site.name }}" />
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen,projection" />
+  <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/css/ie.css" media="screen,projection" />
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.url_toolbox.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.blockify.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      //  set active nav state:
+      var url = $(document).url();  //  get url info
+      var curl = '/';   //  set default file path
+      if (url.attr('file') != null) curl = url.attr('file');  //  if filepath string is not null, retrieve it
+      $('#nav a[href$=' + curl + ']').addClass('active'); //  make it so.
+
+      //  add span for drop shadow:
+      $('#top-img').append('<span/>');
+
+      //  make side col links block clickable:
+      $('.block').blockify();
+
+      //  jump box modal stuff:
+      $('#diagrams li').hover(function(){
+        $('#diagrams li').css('zIndex',1);
+        $(this).css('zIndex',9).find('.modal').fadeIn();
+      },function(){
+        $(this).find('.modal:visible').fadeOut('fast');
+      });
+
+    });
+  </script>
+</head>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+
+
+<div id="wrap">
+  <div id="branding">
+    <a id="logo" href="/">Jardins Gardens <span>A tiny green footprint gardening company</span></a>
+
+    <ul id="nav">
+      <li><a id="welcome" href="/">welcome</a></li>
+      <li><a id="footprint" href="/who/">who we are</a></li>
+      <li><a id="gardens" href="/what/">what we do</a></li>
+      <li><a id="contact" href="/contact/">get in touch</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <div id="main-content">
+
+      {{ content }}
+
+    </div>
+
+    <div id="sub-content">
+      <h2>New Recipes &amp; Tips</h2>
+
+      <div class="block">
+        <h3>Dandelion Salad</h3>
+        <img src="/img/recipe-dandelion-salad.jpg" alt=""/>
+        <p>The light citrus dressing goes just right with the tangy, bitter taste of the dandelion leaves. <a href="/dandelion-salad/">+ more</a></p>
+      </div>
+
+
+      <div class="block">
+        <h3>Solution: Quail Covers</h3>
+        <img src="/img/sol-quail-covers.png" alt=""/>
+        <p>Quail love your garden too, we are experimenting with covers and ways to keep these beautiful creatures admiring your greenery, not chewing on it.</p>
+      </div>
+    </div>
+
+    <br class="clear" />
+
+  </div>
+
+  <div id="site-info">
+    <div id="get-in-touch">
+      <h2>Get in touch</h2>
+      <p class="phone">+1 (250) 490 3600</p>
+      <p>or email us at: <a href="mailto:info@jardinsgardens.com">info@jardinsgardens.com</a></p>
+    </div>
+    <p id="supp-nav"><a href="/">welcome</a>  |  <a href="/who/">who we are</a>  |  <a href="/what/">what we do</a>  |  <a href="/recipes/">recipes</a>  |  <a href="/reading/">further reading</a>  |  <a href="/contact/">get in touch</a></p>
+    <p>copyright &copy; {{ site.time | date: '%Y' }} jardins gardens All rights reserved.</p>
+  </div>
+</div>
+
+</body>
+</html>

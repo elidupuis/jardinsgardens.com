@@ -1,0 +1,180 @@
+@import url('reset.css');
+
+/* 
+	Main CSS doc for Jardins Gardens | Copyright 2009
+	Created By Lift. (http://www.elidupuis.com)
+*/
+
+/*
+	Font-sizes. Browser default is 16px. Set body to 75%, which is equal to 12px and, therefore, 1em is 12px.
+		9px		: 0.75em
+		10px	: 0.8333em
+		11px	: 0.9167em
+		12px	: 1.0em
+		13px	: 1.0833em
+		14px	: 1.1667em
+		15px	: 1.25em
+		16px	: 1.3333em
+		17px	: 1.4167em
+		18px	: 1.5em
+		19px	: 1.5833em
+		20px	: 1.6667em
+		21px	: 1.75em
+		22px	: 1.8333em
+		23px	: 1.9167em
+		24px	: 2.0em
+		25px	: 2.0833em
+		26px	: 2.1667em
+		27px	: 2.25em
+		28px	: 2.3333em
+		29px	: 2.4167em
+		30px	: 2.5em
+		31px	: 2.5833em
+		32px	: 2.6667em
+*/
+
+/*
+	Palette
+	#333333		dark gray
+	
+*/
+
+/*
+**	=global
+************************/
+body					{ background:#573e1e url('../img/bg-body.gif') repeat 0 0; color:#573e1e; font:75%/1 georgia,Times,'Times New Roman',serif; }
+a						{ color:#666; text-decoration:none; }
+a:hover					{ color:#ccc; }
+a img, img				{ border:0; }
+p,ul,ol					{ margin-bottom:1em; }
+p,li					{ line-height:1.4; }
+h1,h2,h3,h4,h5,h6		{ font-weight:normal; margin-bottom:0.5em; }
+strong, b				{ font-weight:bold; }
+em, i					{ font-style:italic; }
+hr						{ border:0 dotted #ccc; border-top-width:1px; height:0; clear:both; }
+
+abbr					{ border-bottom: 1px dotted; }
+
+.clear 					{ clear: both; }
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*#content h2				{ font-size:2.25em; }
+#content h3				{ font-size:2em; }
+#content h4				{ font-size:1.75em; }
+#content h5				{ font-size:1.25em; }
+#content h6				{ font-size:1em; margin-bottom:1em; }
+#content img			{ margin-bottom:1em; }
+#content ul,#content ol	{ list-style-position:inside; }
+#content li				{ list-style-type:disc; }
+#content ol li			{ list-style-type:decimal; }*/
+
+.unify					{ width: 100%; }
+
+
+/* =wrap */
+#wrap					{ background:#fff url('../img/bg-content.gif') repeat-y 0 0; margin:0 auto; padding:0 0 10px; width:960px; }
+
+/*
+**	=branding
+************************/
+#branding				{ /*display:inline; float:left;*/position: absolute; width:242px; }
+#logo					{ background:url('../img/logo-jg.gif') no-repeat 0 0; display:block; width:200px; height:116px; margin:50px 0 0 20px; text-indent:-9999em; }
+
+#nav					{ float:right; margin:60px 0 0; }
+#nav li					{ clear:both; float:right; line-height:1; }
+#nav a					{ background:#573e1e url('../img/bg-nav-item.jpg') no-repeat right 0; /*border:solid #5e4627; border-width:1px 0 1px 1px;*/ color:#f6fce3; display:block; height:15px; padding:10px 15px; text-transform:lowercase; white-space:nowrap; border-radius:7px 0 0 7px; -moz-border-radius-topleft:7px; -webkit-border-top-left-radius:7px; -moz-border-radius-bottomleft:7px; -webkit-border-bottom-left-radius:7px; }
+#nav a#welcome			{ padding-right:40px; }
+#nav a#gardens			{ padding-right:65px; }
+#nav a#footprint		{ padding-right:95px; }
+#nav a#contact			{ padding-right:40px; }
+#nav a.active			{ background-color:#76a851; background-position:right -35px; border-color:#75a64f; }
+#nav a:hover			{ color:#76a851; }
+#nav a.active:hover		{ color:inherit; }
+
+
+/*
+**	=content
+************************/
+#content				{ clear: both; width: 960px; }
+
+
+/* =main-content */
+#main-content			{ background:#f6fce3; display:inline; float:right; margin-right:10px; margin-bottom: 2em; width:708px; }
+#top-img				{ margin-top:10px; position:relative; clear:both; height: 280px; width: 705px; }
+#top-img p#tagline		{ background:#f6fce3; font-size:1.3333em; font-style:italic; margin:0; padding: 9px 10px 9px 12px; position:absolute; bottom:0; right:17px; }
+#top-img span			{ background:url('../img/bg-tagline.png') no-repeat 0 0; position:absolute; bottom:0; right:10px; width:7px; height:38px; }
+
+#main-content h1		{ color:#6eb43f; font-size:3.833em; margin:30px 25px 20px; text-transform: lowercase; }
+#main-content h2,
+#fancy_div h2			{ font-size:2em; margin:30px 25px 0.5em; }
+#fancy_div h2			{ margin-top:0; padding-top:30px; }
+#main-content h3        { font-size:1.6em; margin:20px 25px 0.25em; }
+
+#main-content p,
+#fancy_div p			{ font-size:1.25em; margin-left:25px; margin-right:35px; }
+
+#main-content ul,
+#main-content ol		{ margin-left:50px; margin-right:35px; list-style-type:disc; }
+#main-content ol 		{ list-style-type: decimal; }
+#main-content li		{ font-size: 1.25em; margin-bottom: 0.25em; }
+
+#main-content p a,
+#fancy_div p a			{ color:#BE3C00; }
+#main-content p a:hover,
+#fancy_div p a:hover	{ color:#96B56B; }
+
+#main-content blockquote	{ background:#799a4a url() no-repeat 0 0; border:6px solid #96b56b; clear: both; padding:10px 10px 5px; margin:2em 20px 2em 25px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+#main-content blockquote p	{ color:#f6fce3; font:1.4167em/1.2 arial,helvetica,sans-serif; text-align:center; margin:0 0 0.5em; }
+#main-content blockquote a	{ color:#573E1E; }
+#main-content blockquote a:hover	{ color:#a0b77f; }
+
+
+/* =diagrams */
+ul#diagrams				{ clear:both; margin:3em 20px 4em; float: left; }
+#diagrams li			{ background:#fff url('../img/bg-diagram-1.png') no-repeat center 45px; border:1px solid #baba6c; display:inline; font-size: 1em; float:left; margin:0 5px; padding:4px; min-height:260px; position: relative; width:202px; z-index: 1; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; } /* width:210px; */
+#diagrams li.two		{ background-image: url('../img/bg-diagram-2.png'); }
+#diagrams li.three		{ background-image: url('../img/bg-diagram-3.png'); }
+#diagrams h2			{ background:#573e1e url('../img/bg-diagram-h2.jpg') no-repeat right 0; color:#fff; font-size:1.333em; margin:0; padding:10px 15px 7px; }
+#diagrams p				{ margin:115px 7px 0.5em; font: 1.1667em/1.3 arial,helvetica,sans-serif; }
+#diagrams p em			{ color:#cba809; display:block; font:normal 1.0833em/1.4 georgia,'times new roman',serif; }
+#diagrams .modal		{ background: #fff; border: 8px solid #799a4a; display: none; padding: 1em; position: absolute; top:40px; left:-70px; width:300px; z-index:99; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; box-shadow:0 0 15px rgba(0,0,0,0.75); -webkit-box-shadow:0 0 15px rgba(0,0,0,0.75); -moz-box-shadow:0 0 15px rgba(0,0,0,0.75); }
+#diagrams .modal p 		{ font-size: 1.0833em; margin-top:0; }
+#diagrams .modal p.heading	{ font-size: 1.25em; font-weight: bold; }
+#diagrams .modal p a	{ font-weight: bold; white-space: nowrap; }
+
+.home #diagrams			{ margin: 1em 20px 2em; }
+.home #diagrams li		{ background: #fff; min-height: 137px; }
+.home #diagrams p		{ margin-top: 15px; }
+
+
+
+/* =sub-content */
+#sub-content			{ clear:left; display:inline; font-family:arial,helvetica,sans-serif; float:left; margin:400px 0 30px 35px; width:185px; }	/* width:220px; */
+#sub-content h2			{ color:#6eb43f; font-size:1.75em; font-family:georgia,'times new roman',serif; }
+#sub-content h3			{ background:#edf4d6; border:1px dashed #bcaf67; border-width:1px 0; font-size:0.9167em; margin-bottom:1em; padding:8px 10px; }
+#sub-content img		{ border:1px dashed #bcaf67; margin:0 0 1em; }
+
+#sub-content p			{ color:#7e5c1a; font-size:0.9167em; }
+#sub-content a			{ color:#be3c00; white-space:nowrap; }
+/*#sub-content a:hover	{ color:#be3c00; }*/
+
+
+/*
+**	=site-info
+************************/
+#site-info				{ background:#799a4a url('../img/bg-footer.gif') no-repeat 97% bottom; clear:both; font:0.9167em/1.4 helvetica,arial,sans-serif; margin:10px 10px 0; min-height:75px; padding:20px 0; position:relative; width: 940px; }
+#site-info p			{ color:#f6fce3; margin-left:257px; }
+#site-info p a			{ color:#f6fce3; }
+#site-info p#supp-nav	{ color:#fff; }
+#site-info p#supp-nav a	{ color:#fff; }
+
+#get-in-touch			{ color:#f6fce3; position:absolute; left:22px; }
+#get-in-touch h2		{ font:1.9167em/1 georgia,'times new roman', serif; margin-bottom:0.333em; }
+#get-in-touch p.phone	{ font-size:1.6667em; }
+#get-in-touch p			{ margin:0; }
